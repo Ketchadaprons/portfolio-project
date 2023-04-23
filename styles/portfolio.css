@@ -1,11 +1,12 @@
 :root {
-  --branding-color: #6c63ff;
-  --secondary-color: #f9f7fe;
+  --branding-color: #fdb44b;
+  --secondary-color: #8dc6ff;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
 body {
   font-family: var(--default-font-family);
+  background: #e4f1fe;
 }
 
 h1,
@@ -19,7 +20,7 @@ h6 {
   font-weight: bold;
 }
 h1 {
-  font-size: 96px;
+  font-size: 80px;
   line-height: 1.5;
 }
 h2 {
@@ -96,9 +97,9 @@ p {
   background: var(--branding-color);
 }
 .bth-branding-outline {
-  border: 1px solid var(--branding-color);
+  border: 3px solid var(--branding-color);
   border-radius: 4px;
-  padding: 15px 25px;
+  padding: 13px 20px;
   color: white;
   font-size: 18px;
   line-height: 27px;
@@ -139,7 +140,9 @@ nav a {
   transition: all 100ms ease-in-out;
 }
 
-nav a:hover,
+nav a:hover {
+  color: var(--branding-color);
+}
 nav li.active a {
   color: var(--branding-color);
 }
@@ -186,7 +189,7 @@ footer .social-links a:hover {
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
-    line-height: 2;
+    line-height: 1.5;
   }
   h2 {
     font-size: 44px;
@@ -194,6 +197,10 @@ footer .social-links a:hover {
   .content {
     text-align: center;
     padding: 0;
+  }
+  .content h1 {
+    font-size: 40px;
+    line-height: 40px;
   }
   .project-description {
     padding: 0;
@@ -207,5 +214,8 @@ footer .social-links a:hover {
   nav li {
     line-height: 42px;
     font-size: 15px;
+  }
+  footer .email-link {
+    font-size: 18px;
   }
 }
