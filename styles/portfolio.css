@@ -20,7 +20,7 @@ h6 {
   font-weight: bold;
 }
 h1 {
-  font-size: 80px;
+  font-size: 60px;
   line-height: 1.5;
 }
 h2 {
@@ -36,6 +36,7 @@ p {
   color: rgba(39, 33, 66, 0.7);
   line-height: 30px;
 }
+
 .hero {
   text-align: center;
   background: var(--secondary-color);
@@ -81,10 +82,10 @@ p {
 }
 
 .content {
-  margin: 30px;
+  margin: 50px;
 }
 .content img {
-  padding: 30px;
+  padding: 14px;
 }
 
 .content .bth-branding-outline {
@@ -110,9 +111,9 @@ p {
 .bth-branding-outline {
   border: 3px solid var(--branding-color);
   border-radius: 4px;
-  padding: 13px 20px;
+  padding: 4px 9px;
   color: white;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 27px;
 }
 
@@ -155,6 +156,13 @@ nav a:hover {
 }
 nav li.active a {
   color: var(--branding-color);
+}
+
+.img-me {
+  display: block;
+  width: 380px;
+  border-radius: 20%;
+  margin: auto;
 }
 
 .skill-container {
@@ -240,9 +248,13 @@ footer .social-links a:hover {
     line-height: 42px;
     font-size: 15px;
   }
+
   footer .email-link {
     font-size: 18px;
   }
+}
+
+@media (max-width: 1200px) {
   .content .bth-branding-outline {
     display: none;
   }
